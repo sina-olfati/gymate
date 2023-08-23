@@ -57,7 +57,7 @@ function Navbar() {
     <>
       <nav
         className={`flex flex-row bg-transparent items-center justify-between py-8 px-12  fixed top-0 left-0 right-0 w-full z-50 ${
-          sticky ? "bg-black shadow-xl" : ""
+          sticky ? "shadow-xl !bg-black" : ""
         }`}
       >
         <Link to="/">
@@ -86,7 +86,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <a
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="#home"
+                    href="/#home"
                   >
                     Home
                   </a>
@@ -94,7 +94,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <a
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="#about"
+                    href="/#about"
                   >
                     About
                   </a>
@@ -102,7 +102,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <a
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="#featured"
+                    href="/#featured"
                   >
                     Featured
                   </a>
@@ -110,7 +110,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <a
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="#team"
+                    href="/#team"
                   >
                     Team
                   </a>
@@ -126,7 +126,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <a
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="#pricing"
+                    href="/#pricing"
                   >
                     Pricing
                   </a>
@@ -134,7 +134,7 @@ function Navbar() {
                 <li onClick={hamburgerMenu}>
                   <a
                     className="text-[2rem] font-medium hover:text-[#ff0336] ease-in duration-200"
-                    href="#blog"
+                    href="/#blog"
                   >
                     Blog
                   </a>
@@ -244,7 +244,9 @@ function Navbar() {
               className="fa-bars fa-solid hidden text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"
             ></i>
             {/* account */}
-            <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            <Link to="/signup">
+              <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
+            </Link>
             {/* sidebar */}
             <i
               onClick={sideBar}

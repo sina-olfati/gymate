@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { UserAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import Footer from "../components/Footer/Footer";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -10,25 +9,17 @@ function Login() {
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
-  const goTop = () => {
-    window.scrollTo({
-      top: 0,
-    });
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     try {
       await logIn(email, password);
       navigate("/#home");
-      goTop();
     } catch (error) {
       console.log(error);
       setError(error.message);
     }
   };
-
   return (
     <>
       <section className="login-section">
@@ -38,7 +29,7 @@ function Login() {
           </h1>
         </div>
         {/* form  */}
-        <div className="page-padding py-[10rem] flex justify-center">
+        <div className="p-20 min450:p-7 flex justify-center">
           <form
             onSubmit={handleSubmit}
             className="flex flex-col py-40 px-20 bg-black w-[55rem] min450:w-full  shadow-xl"
@@ -72,9 +63,9 @@ function Login() {
               type="submit"
               className="bg-[#ff0336] text-white py-4 font-medium text-[2rem] w-full mt-10"
             >
-              Sign In
+              Log in
             </button>
-            <div className="flex gap-4 items-center mt-16 min450:flex-col">
+            <div className="flex gap-4 items-center mt-16">
               <p className="text-white text-[1.5rem]">New to Gymate?</p>
               <Link
                 to="/signup"
@@ -83,14 +74,8 @@ function Login() {
                 Sign Up
               </Link>
             </div>
-            <p className="text-[#ffffffbc] text-[1.4rem] mt-3">
-              <span className="text-[#ff0336]">Test Account</span> -
-              gymate@gymail.com <span className="text-[#ff0336]"> / </span>
-              testpassword123
-            </p>
           </form>
         </div>
-        <Footer />
       </section>
     </>
   );
