@@ -3,14 +3,14 @@ import MainButton from "../MainButton";
 function PricingBox({ img, price }) {
   return (
     <>
-      <div className="flex flex-col w-1/3 md1000:w-[40rem] bg-white shadow-xl relative min540:w-[100%]">
+      <div className="flex flex-col w-1/3 bg-white shadow-xl relative">
         <div
           style={{ transition: "all 0.3s" }}
           className="relative grayscale hover:grayscale-0"
         >
           <img src={img} alt="pricing_img" className="w-full h-full" />
-          <div className="absolute bg-white text-[20px] font-bold w-[25rem] text-center py-6 text-[#ff0336] -bottom-[18px] left-0 right-0 mx-auto">
-            Beginners
+          <div className="absolute bg-white text-[20px] font-bold w-[25rem] text-center py-6 text-[#ff0336] bottom-0 left-0 right-0 mx-auto">
+            Begginers
           </div>
         </div>
         <div className="flex flex-col items-center pt-[20px] pb-[50px]">
@@ -34,12 +34,11 @@ function PricingBox({ img, price }) {
           </div>
 
           <MainButton
-            color={`!text-white`}
+            color={`text-white`}
             bg={`bg-[#ff0336]`}
             text="purchase now"
-            arrowColor={`!text-white`}
+            arrowColor={`text-white`}
             cN="pricing-cta"
-            goTo="/contact"
           />
         </div>
       </div>

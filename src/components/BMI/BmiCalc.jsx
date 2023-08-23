@@ -27,14 +27,13 @@ function BmiCalc() {
 
   return (
     <>
-      <section className="bmi-section py-[6rem] relative">
-        <div className="container page-padding ">
-          <span className="w-full h-full absolute bg-transparent min620:bg-[#00000063] top-0 left-0"></span>
-          <div className="text-white w-[52rem] min620:w-[100%] relative">
+      <section className="bmi-section py-[6rem]">
+        <div className="container page-padding">
+          <div className="text-white w-[52rem]">
             <h2 className="text-[4rem] font-bold leading-[1.1] mb-8">
               Let's Calculate Your <span className="text-[#FF0336]">BMI</span>
             </h2>
-            <p className="text-[16px] text-[#a1a1a1] min620:text-white">
+            <p className="text-[16px] text-[#a1a1a1]">
               Easily determine your body mass index with our accurate
               calculation tool.
             </p>
@@ -42,13 +41,13 @@ function BmiCalc() {
               <form className="flex w-full gap-6 h-[50px] mt-10 ">
                 <input
                   onChange={(e) => setWeight(e.target.value)}
-                  className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
+                  className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6"
                   type="text"
                   placeholder="Weight / kg"
                 ></input>
                 <input
                   onChange={(e) => setHeight(e.target.value)}
-                  className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6 min450:bg-white min450:text-black"
+                  className="w-[50%] bg-transparent text-[14px] border-2 border-[#ffffff7d] pl-6"
                   type="text"
                   placeholder="Height / cm"
                 ></input>
