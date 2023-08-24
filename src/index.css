@@ -107,6 +107,7 @@ body {
 .about-cta {
   padding: 1.82rem 3.6rem;
   transition: all 0.3s;
+  width: 21rem;
 }
 
 .about-cta::after {
@@ -636,6 +637,123 @@ body {
   border: 2px solid #FF0336;
 }
 
+/* blog section */
+.cta-section {
+  background-image: url('../src//images/call/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* cta banner */
+
+.cta-banner-btn {
+  padding: 18px 22px;
+}
+
+/* gallery */
+
+.gallery-cta {
+  display: none;
+}
+
+/* login */
+.login-section {
+  background-image: url('../src/images/who-we-are/background.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.login-banner {
+  background-image: url('../src/images/login/banner.jpg');
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 45vh;
+}
+
+/* classes page ----- */
+
+.cycling-bg,
+.meditaion-bg,
+.mma-bg,
+.karate-bg,
+.power-bg,
+.workout-bg,
+.cross-bg,
+.run-bg {
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cycling-bg {
+  background-image: url('../src/images/classes/cycling.jpg');
+}
+
+.meditaion-bg {
+  background-image: url('../src/images/classes/meditation.jpg');
+}
+
+.mma-bg {
+  background-image: url('../src/images/classes/mma.jpg');
+}
+
+.karate-bg {
+  background-image: url('../src/images/classes/karate.jpg');
+}
+
+.powerlift-bg {
+  background-image: url('../src/images/classes/powerlifting.jpg');
+}
+
+.workout-bg {
+  background-image: url('../src/images/classes/workout.jpg');
+}
+
+.crossfit-bg {
+  background-image: url('../src/images/classes/cross.jpg');
+}
+
+.running-bg {
+  background-image: url('../src/images/classes/running.jpg');
+}
+
+.box-bg {
+  background-image: url('../src/images/classes/box.jpg');
+}
+
+.bodybuilding-bg {
+  background-image: url('../src/images/classes/bodybuilding.jpg');
+}
+
+.yoga-bg {
+  background-image: url('../src/images/classes/yoga.jpg');
+}
+
+.fitness-bg {
+  background-image: url('../src/images/classes/fitness.jpg');
+}
+
+/* MEDIA QUERIES --------------------------------*/
+
+@media (max-width: 1200px) {
+  .navlist-nav {
+    display: none;
+  }
+
+  .fa-bars {
+    display: flex;
+  }
+}
 
 /* scrollbar ------------------------- */
 
@@ -643,6 +761,7 @@ body {
 * {
   scrollbar-width: thin;
   scrollbar-color: #A0A0A0 #FFFFFF;
+  scroll-behavior: smooth;
 }
 
 /* Chrome, Edge and Safari */

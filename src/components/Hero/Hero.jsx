@@ -28,6 +28,7 @@ function Hero() {
               color={`text-black`}
               bg={`bg-white`}
               text="our classes"
+              goTo="/classes"
             />
           </div>
         </div>
