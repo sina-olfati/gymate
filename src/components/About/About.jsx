@@ -45,7 +45,7 @@ function About() {
                   <img
                     src={TrainersIcon}
                     alt="icon_img"
-                    className={`w-[5.4rem] mb-6`}
+                    className={`w-[5.4rem] mb-6 h-auto`}
                   />
                   <h3 className="uppercase font-bold text-[20px] leading-snug">
                     professional <br /> trainers
@@ -56,7 +56,7 @@ function About() {
                   <img
                     src={ModernIcon}
                     alt="icon_img"
-                    className={`w-[5.4rem] mb-6 `}
+                    className={`w-[5.4rem] mb-6 h-auto`}
                   />
                   <h3 className="uppercase font-bold text-[20px] leading-snug">
                     modern <br /> equipments
@@ -67,7 +67,7 @@ function About() {
                   <img
                     src={LiftIcon}
                     alt="icon_img"
-                    className={`w-[5.4rem] mb-6`}
+                    className={`w-[5.4rem] mb-6 h-auto`}
                   />
                   <h3 className="uppercase font-bold text-[20px] leading-snug">
                     fancy gym <br />

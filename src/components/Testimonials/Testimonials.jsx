@@ -59,12 +59,14 @@ function Testimonials() {
               {/* buttons */}
               <div className="flex gap-3 absolute bottom-[25px] right-[35px]">
                 <button
+                  title="left"
                   style={{ transition: "all 0.2s" }}
                   className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"
                 >
                   <i class="fa-solid fa-arrow-left"></i>
                 </button>
                 <button
+                  title="right"
                   style={{ transition: "all 0.2s" }}
                   className="py-5 px-7 bg-white text-black text-2xl hover:bg-[#FF0336] hover:text-white"
                 >
