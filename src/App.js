@@ -17,6 +17,10 @@ import Thursday from "./Pages/Schedule/Thursday";
 import Friday from "./Pages/Schedule/Friday";
 import Saturday from "./Pages/Schedule/Saturday";
 import Sunday from "./Pages/Schedule/Sunday";
+import Gallery from "./Pages/Gallery/Gallery";
+import GalleryPage1 from "./Pages/Gallery/GalleryPage1";
+import GalleryPage2 from "./Pages/Gallery/GalleryPage2";
+import About from "./Pages/About";
 
 function App() {
   return (
@@ -25,12 +29,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/classes" element={<Classes />} />
-          <Route path="/pricing" element={<Price />} />
-          <Route path="/blog" element={<Blog />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="classes" element={<Classes />} />
+          <Route path="pricing" element={<Price />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="about" element={<About />} />
 
           <Route path="schedule" element={<Schedule />}>
             <Route path="monday" element={<Monday />} />
@@ -40,6 +45,11 @@ function App() {
             <Route path="friday" element={<Friday />} />
             <Route path="saturday" element={<Saturday />} />
             <Route path="sunday" element={<Sunday />} />
+          </Route>
+
+          <Route path="gallery" element={<Gallery />}>
+            <Route path="page-1" element={<GalleryPage1 />} />
+            <Route path="page-2" element={<GalleryPage2 />} />
           </Route>
         </Routes>
       </AuthContextProvider>
